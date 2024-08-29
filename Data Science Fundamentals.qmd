@@ -1,0 +1,33 @@
+---
+title: "Data Science Fundamentals"
+format: html
+editor: visual
+---
+
+## What is a Data Scientist?
+
+Data scientists are professionals that analyze data so that business/organizations can make better decisions. While closely related to statisticians, there are a few key differences between data scientists and statisticians. Namely,
+
+-   data science is interdisciplinary
+    -   data scientists use computer programming, statistics, and machine learning in their line of work; statisticians tend to be more focused and experts in a more narrow scope of work
+-   statisticians *might* do some coding, whereas for data scientists coding is central!
+    -   data scientists might also utilize software like Tableau to make nice visuals for their data because presentation is also crucial in their line of work; for statisticians this tends to not be as important
+
+While I respect the rigorous nature of the statistician, I want to be a data scientist so ultimately I side with them!
+
+## Code Example
+
+Here is a simple example of work a data scientist might do. First, we define an object called y and list its class, internal type, and structure.
+
+```{r}
+y <- density(iris$Petal.Width)
+class(y)
+typeof(y)
+str(y)
+```
+
+Next we plot y:
+
+```{r}
+plot(y, main = "Pedal Width Density Plot")
+```
